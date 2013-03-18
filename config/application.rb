@@ -68,5 +68,7 @@ module UfcAccounts
     # Do not generate assets and helpers.
     config.generators.assets = false
     config.generators.helper = false
+
+    config.assets.initialize_on_precompile = false
   end
 end
