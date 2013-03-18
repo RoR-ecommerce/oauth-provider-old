@@ -9,7 +9,7 @@ gem 'pg'
 
 gem 'devise'
 gem 'cancan'
-
+gem 'doorkeeper', '~> 0.6.7'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
