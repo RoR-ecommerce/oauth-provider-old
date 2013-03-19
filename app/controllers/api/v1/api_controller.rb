@@ -1,4 +1,4 @@
-class Api::V1::ApiController < ApplicationController
+class Api::V1::ApiController < ActionController::Base
   doorkeeper_for :all
 
   respond_to :json
