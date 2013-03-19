@@ -6,6 +6,7 @@ require "action_controller/railtie"
 require "action_mailer/railtie"
 require "active_resource/railtie"
 require "sprockets/railtie"
+require 'oauth/rack/oauth_filter'
 # require "rails/test_unit/railtie"
 
 if defined?(Bundler)
@@ -70,5 +71,6 @@ module UfcAccounts
     config.generators.helper = false
 
     config.assets.initialize_on_precompile = false
+    config.middleware.use OAuth::Rack::OAuthFilter
   end
 end
